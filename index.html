@@ -1,36 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Thunder Finance FAQ – Everything you need to know about DPCS, the Decentralized Proof of Credit Score protocol for uncollateralized crypto lending." />
+    <meta
+      name="description"
+      content="Thunder Finance FAQ – Everything you need to know about DPCS, the Decentralized Proof of Credit Score protocol for uncollateralized crypto lending."
+    />
     <meta name="theme-color" content="#0d1117" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Thunder Finance — FAQ" />
-    <meta property="og:description" content="Answers to the most common questions about how DPCS works." />
+    <meta
+      property="og:description"
+      content="Answers to the most common questions about how DPCS works."
+    />
     <title>Thunder Finance — FAQ</title>
     <style>
-      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-      :root {
-        --bg:         #0d1117;
-        --surface:    #161b22;
-        --border:     #21262d;
-        --accent:     #f0a500;
-        --accent-h:   #ffd166;
-        --text:       #e6edf3;
-        --text-muted: #7d8590;
-        --text-soft:  #adbac7;
-        --radius:     8px;
-        --max-w:      860px;
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
-      html { scroll-behavior: smooth; }
+      :root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --border: #21262d;
+        --accent: #f0a500;
+        --accent-h: #ffd166;
+        --text: #e6edf3;
+        --text-muted: #7d8590;
+        --text-soft: #adbac7;
+        --radius: 8px;
+        --max-w: 860px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
 
       body {
         background: var(--bg);
         color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+          sans-serif;
         font-size: 1rem;
         line-height: 1.6;
         min-height: 100vh;
@@ -38,8 +54,14 @@
         flex-direction: column;
       }
 
-      a { color: var(--accent); text-decoration: none; }
-      a:hover { color: var(--accent-h); text-decoration: underline; }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent-h);
+        text-decoration: underline;
+      }
 
       /* ── HEADER ── */
       header {
@@ -65,12 +87,31 @@
         gap: 0.5rem;
         text-decoration: none;
       }
-      .logo:hover { text-decoration: none; color: var(--text); }
-      .logo .bolt { color: var(--accent); }
-      .logo-text { color: var(--text); }
-      nav ul { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
-      nav a { font-size: 0.875rem; color: var(--text-muted); transition: color 0.15s; }
-      nav a:hover { color: var(--accent-h); text-decoration: none; }
+      .logo:hover {
+        text-decoration: none;
+        color: var(--text);
+      }
+      .logo .bolt {
+        color: var(--accent);
+      }
+      .logo-text {
+        color: var(--text);
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      nav a {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        transition: color 0.15s;
+      }
+      nav a:hover {
+        color: var(--accent-h);
+        text-decoration: none;
+      }
 
       /* ── HERO ── */
       .hero {
@@ -81,12 +122,18 @@
         overflow: hidden;
       }
       .hero::before {
-        content: '';
+        content: "";
         position: absolute;
-        top: -60px; left: 50%;
+        top: -60px;
+        left: 50%;
         transform: translateX(-50%);
-        width: 600px; height: 300px;
-        background: radial-gradient(ellipse at center, rgba(240,165,0,0.07) 0%, transparent 70%);
+        width: 600px;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(240, 165, 0, 0.07) 0%,
+          transparent 70%
+        );
         pointer-events: none;
       }
       .hero h1 {
@@ -100,7 +147,12 @@
         font-style: normal;
         color: var(--accent);
       }
-      .hero-links { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+      .hero-links {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
       .btn {
         display: inline-flex;
         align-items: center;
@@ -111,17 +163,28 @@
         font-weight: 600;
         cursor: pointer;
         border: none;
-        transition: opacity 0.15s, background 0.15s;
+        transition:
+          opacity 0.15s,
+          background 0.15s;
         text-decoration: none;
       }
-      .btn:hover { opacity: 0.85; text-decoration: none; }
-      .btn-primary { background: var(--accent); color: #000; }
+      .btn:hover {
+        opacity: 0.85;
+        text-decoration: none;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #000;
+      }
       .btn-outline {
         background: transparent;
         color: var(--text-soft);
         border: 1px solid var(--border);
       }
-      .btn-outline:hover { border-color: var(--text-muted); color: var(--text); }
+      .btn-outline:hover {
+        border-color: var(--text-muted);
+        color: var(--text);
+      }
 
       /* ── MAIN ── */
       main {
@@ -149,17 +212,26 @@
       }
 
       /* ── FAQ INTRO ── */
-      .faq-intro { margin-bottom: 2rem; }
+      .faq-intro {
+        margin-bottom: 2rem;
+      }
       .faq-intro h2 {
         font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: -0.01em;
         margin-bottom: 0.4rem;
       }
-      .faq-intro p { color: var(--text-muted); font-size: 0.9rem; }
+      .faq-intro p {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
 
       /* ── CATEGORIES ── */
-      .faq-categories { display: flex; flex-direction: column; gap: 1rem; }
+      .faq-categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
 
       .category-block {
         border: 1px solid var(--border);
@@ -167,8 +239,12 @@
         overflow: hidden;
         transition: border-color 0.2s;
       }
-      .category-toggle { display: none; }
-      .category-toggle:checked ~ .category-header { border-bottom: 1px solid var(--border); }
+      .category-toggle {
+        display: none;
+      }
+      .category-toggle:checked ~ .category-header {
+        border-bottom: 1px solid var(--border);
+      }
 
       .category-header {
         display: flex;
@@ -181,24 +257,35 @@
         user-select: none;
         transition: background 0.15s;
       }
-      .category-header:hover { background: #1c2230; }
-      .category-header-left { display: flex; align-items: center; gap: 0.75rem; }
+      .category-header:hover {
+        background: #1c2230;
+      }
+      .category-header-left {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
       .category-icon {
-        width: 34px; height: 34px;
+        width: 34px;
+        height: 34px;
         border-radius: 7px;
-        background: rgba(240,165,0,0.1);
-        border: 1px solid rgba(240,165,0,0.2);
+        background: rgba(240, 165, 0, 0.1);
+        border: 1px solid rgba(240, 165, 0, 0.2);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1rem;
         flex-shrink: 0;
       }
-      .category-title { font-size: 1rem; font-weight: 600; color: var(--text); }
+      .category-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text);
+      }
       .category-count {
         font-size: 0.75rem;
         color: var(--text-muted);
-        background: rgba(255,255,255,0.05);
+        background: rgba(255, 255, 255, 0.05);
         border: 1px solid var(--border);
         border-radius: 20px;
         padding: 1px 9px;
@@ -209,15 +296,27 @@
         transition: transform 0.25s ease;
         flex-shrink: 0;
       }
-      .category-toggle:checked ~ .category-header .category-chevron { transform: rotate(180deg); }
-      .category-toggle:checked ~ .category-header { background: #1a2030; }
+      .category-toggle:checked ~ .category-header .category-chevron {
+        transform: rotate(180deg);
+      }
+      .category-toggle:checked ~ .category-header {
+        background: #1a2030;
+      }
 
-      .category-body { display: none; }
-      .category-toggle:checked ~ .category-body { display: block; }
+      .category-body {
+        display: none;
+      }
+      .category-toggle:checked ~ .category-body {
+        display: block;
+      }
 
       /* ── Q&A ITEMS ── */
-      .faq-item { border-top: 1px solid var(--border); }
-      .faq-q-toggle { display: none; }
+      .faq-item {
+        border-top: 1px solid var(--border);
+      }
+      .faq-q-toggle {
+        display: none;
+      }
 
       .faq-question {
         display: flex;
@@ -229,7 +328,9 @@
         user-select: none;
         transition: background 0.15s;
       }
-      .faq-question:hover { background: rgba(255,255,255,0.02); }
+      .faq-question:hover {
+        background: rgba(255, 255, 255, 0.02);
+      }
       .faq-question-text {
         font-size: 0.93rem;
         font-weight: 500;
@@ -237,28 +338,37 @@
         line-height: 1.5;
         transition: color 0.15s;
       }
-      .faq-q-toggle:checked ~ .faq-question .faq-question-text { color: var(--accent); }
+      .faq-q-toggle:checked ~ .faq-question .faq-question-text {
+        color: var(--accent);
+      }
       .faq-icon {
         color: var(--text-muted);
         font-size: 1.2rem;
         flex-shrink: 0;
         margin-top: 0;
-        transition: transform 0.2s ease, color 0.15s;
+        transition:
+          transform 0.2s ease,
+          color 0.15s;
         line-height: 1.4;
         font-weight: 300;
       }
-      .faq-q-toggle:checked ~ .faq-question .faq-icon { transform: rotate(45deg); color: var(--accent); }
+      .faq-q-toggle:checked ~ .faq-question .faq-icon {
+        transform: rotate(45deg);
+        color: var(--accent);
+      }
 
       .faq-answer {
         display: none;
         padding: 0 1.4rem 1.25rem 2.6rem;
       }
-      .faq-q-toggle:checked ~ .faq-answer { display: block; }
+      .faq-q-toggle:checked ~ .faq-answer {
+        display: block;
+      }
       .faq-answer p {
         font-size: 0.9rem;
         color: var(--text-soft);
         line-height: 1.8;
-        border-left: 2px solid rgba(240,165,0,0.35);
+        border-left: 2px solid rgba(240, 165, 0, 0.35);
         padding-left: 1rem;
       }
 
@@ -279,41 +389,83 @@
         gap: 0.6rem;
         align-items: center;
       }
-      .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
-      footer a { color: var(--text-muted); }
-      footer a:hover { color: var(--accent-h); text-decoration: none; }
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      footer a {
+        color: var(--text-muted);
+      }
+      footer a:hover {
+        color: var(--accent-h);
+        text-decoration: none;
+      }
 
       @media (max-width: 540px) {
-        .hero h1 { font-size: 1.6rem; }
-        .category-header { padding: 1rem; }
-        .faq-question { padding: 0.9rem 1rem; }
-        .faq-answer { padding: 0 1rem 1rem 1.8rem; }
-        main { padding: 2rem 1rem 3rem; }
-        nav ul { gap: 1rem; }
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+        .category-header {
+          padding: 1rem;
+        }
+        .faq-question {
+          padding: 0.9rem 1rem;
+        }
+        .faq-answer {
+          padding: 0 1rem 1rem 1.8rem;
+        }
+        main {
+          padding: 2rem 1rem 3rem;
+        }
+        nav ul {
+          gap: 1rem;
+        }
       }
     </style>
   </head>
 
   <body>
-
     <!-- HEADER -->
     <header>
       <div class="inner">
-        <a href="https://web3thunder.finance" class="logo" aria-label="Thunder Finance home">
+        <a
+          href="https://web3thunder.finance"
+          class="logo"
+          aria-label="Thunder Finance home"
+        >
           <img
             src="./TF_logo_transparent.png"
             alt="Thunder Finance"
-            style="height: 32px; width: auto;"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+            style="height: 32px; width: auto"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'inline';
+            "
           />
-          <span class="bolt" style="display:none;">⚡</span>
+          <span class="bolt" style="display: none">⚡</span>
           <span class="logo-text">Thunder Finance</span>
         </a>
         <nav aria-label="Primary navigation">
           <ul>
             <li><a href="https://web3thunder.finance">Main Site</a></li>
-            <li><a href="https://x.com/web3thunderfin" target="_blank" rel="noopener">X / Twitter</a></li>
-            <li><a href="https://github.com/web3thunderfinance" target="_blank" rel="noopener">GitHub</a></li>
+            <li>
+              <a
+                href="https://x.com/web3thunderfin"
+                target="_blank"
+                rel="noopener"
+                >X / Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/web3thunderfinance"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -321,31 +473,68 @@
 
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">Thunder Finance —<br><em>Decentralized Proof of Credit Score</em></h1>
+      <h1 id="hero-heading">
+        Thunder Finance —<br /><em>Decentralized Proof of Credit Score</em>
+      </h1>
       <div class="hero-links">
-        <a href="https://web3thunder.finance" class="btn btn-primary">← Back to main site</a>
-        <a href="https://web3-thunder-finance-web.vercel.app/" target="_blank" rel="noopener" class="btn btn-outline">Join The MiniApp</a>
+        <a href="https://web3thunder.finance" class="btn btn-primary"
+          >← Back to main site</a
+        >
+        <a
+          href="https://web3-thunder-finance-web.vercel.app/"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline"
+          >Join The MiniApp</a
+        >
       </div>
     </section>
 
     <!-- MAIN -->
     <main id="main-content">
-
       <!-- INTRO -->
       <section class="intro-section">
-        <p>Thunder Finance is a DeFi protocol designed to make uncollateralized crypto lending viable at scale. Instead of requiring borrowers to lock up assets as collateral, a barrier that excludes most real-world credit demand, DPCS replaces collateral with a structured, privacy-preserving credit assessment process powered by independent validators and verified institutional data.</p>
-        <p>The core innovation is DPCS: Decentralized Proof of Credit Score. It bridges traditional credit infrastructure with: rating agencies, banks, compliance bureaus, integrating it with on-chain lending mechanics. Borrowers prove their creditworthiness. Validators, who stake their own capital, evaluate each proposal independently and are financially accountable for the credits they approve. Investors verify five most trustable Validators evaluations and decide to fund the loan. Smart Contract executes itself and the credit journey begins.</p>
-        <p>DPCS exists because the gap between DeFi's capital efficiency and traditional credit markets remains largely unsolved. The protocol is built to close that gap filling it: compliantly, transparently, and without sacrificing the decentralization that makes DeFi worth building on.</p>
+        <p>
+          DPCS was created to fill the gap between DeFi's capital efficiency and
+          traditional credit markets remains largely unsolved. The protocol is
+          built to close that gap filling it: compliantly, transparently, and
+          without sacrificing the decentralization that makes DeFi worth
+          building on.
+        </p>
+        <p>
+          DPCS is designed to make uncollateralized
+          crypto lending viable at scale. Instead of requiring borrowers to lock
+          up assets as collateral, a barrier that excludes most real-world
+          credit demand, DPCS replaces collateral with a structured,
+          privacy-preserving credit assessment process powered by independent
+          validators and verified institutional data.
+        </p>
+        <p>
+          The core innovation of DPCS is: It
+          bridges traditional credit infrastructure: rating agencies (such as Fitch),
+          banks, wealth managements funds, compliance bureaus, integrating them 
+          with on-chain lending protocols (such as Morpho). 
+        </p>
+        <p> 
+          Borrowers prove their creditworthiness. Validators, who
+          stake their own capital, evaluate each proposal independently and are
+          financially accountable for the credits they approve. Investors verify
+          five most trustable Validators evaluations and decide to fund the
+          loan. Smart Contract executes itself and the credit journey begins.
+        </p>
+        
       </section>
 
       <!-- FAQ -->
       <div class="faq-intro">
         <h2>Frequently Asked Questions</h2>
-        <p>Select a category to expand it, then click any question to reveal the answer.</p>
+        <p>
+          Select a category to expand it, then click any question to reveal the
+          answer.
+        </p>
       </div>
 
       <div class="faq-categories">
-
         <!-- CATEGORY 1 -->
         <div class="category-block">
           <input type="checkbox" class="category-toggle" id="cat1" />
@@ -358,51 +547,89 @@
             <span class="category-chevron">▼</span>
           </label>
           <div class="category-body">
-
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q1-1" />
               <label class="faq-question" for="q1-1">
-                <span class="faq-question-text">How does the validator deposit system work? Does a $10K deposit cover participation in any loan?</span>
+                <span class="faq-question-text"
+                  >How does the validator deposit system work? Does a $10K
+                  deposit cover participation in any loan?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>The security deposit functions as a collateral reserve. Each loan approval requires the validator to lock 10% of the approved loan amount. A $10K deposit allows participation in up to $100K in total approved loan volume simultaneously. For example, approving a $50K loan locks $5K, leaving $5K available for additional deals. Locked collateral is released progressively as loan installments are paid.</p>
+                <p>
+                  The security deposit functions as a collateral reserve. Each
+                  loan approval requires the validator to lock 10% of the
+                  approved loan amount. A $10K deposit allows participation in
+                  up to $100K in total approved loan volume simultaneously. For
+                  example, approving a $50K loan locks $5K, leaving $5K
+                  available for additional deals. Locked collateral is released
+                  progressively as loan installments are paid.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q1-2" />
               <label class="faq-question" for="q1-2">
-                <span class="faq-question-text">How are validators assigned to credit proposals?</span>
+                <span class="faq-question-text"
+                  >How are validators assigned to credit proposals?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>Validators are not assigned — they self-select which proposals to analyze. Any credentialed validator may review and score a proposal at any time. The five highest-ranked validators who approved a given proposal are the ones visible to the investor at the time of funding. If a higher-ranked validator approves after a lower-ranked one, the lower-ranked validator may be displaced and their locked collateral returned for reuse.</p>
+                <p>
+                  Validators are not assigned — they self-select which proposals
+                  to analyze. Any credentialed validator may review and score a
+                  proposal at any time. The five highest-ranked validators who
+                  approved a given proposal are the ones visible to the investor
+                  at the time of funding. If a higher-ranked validator approves
+                  after a lower-ranked one, the lower-ranked validator may be
+                  displaced and their locked collateral returned for reuse.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q1-3" />
               <label class="faq-question" for="q1-3">
-                <span class="faq-question-text">Do validators see each other's scores before submitting?</span>
+                <span class="faq-question-text"
+                  >Do validators see each other's scores before
+                  submitting?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>No. Each validator submits their analysis independently at their own discretion. Scores are not shared among validators. Only the investor has visibility into the five top-ranked validators' scores for a given proposal. This structure prevents coordination and ensures independent credit assessment.</p>
+                <p>
+                  No. Each validator submits their analysis independently at
+                  their own discretion. Scores are not shared among validators.
+                  Only the investor has visibility into the five top-ranked
+                  validators' scores for a given proposal. This structure
+                  prevents coordination and ensures independent credit
+                  assessment.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q1-4" />
               <label class="faq-question" for="q1-4">
-                <span class="faq-question-text">What does the ranking bonus at settlement mean?</span>
+                <span class="faq-question-text"
+                  >What does the ranking bonus at settlement mean?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>The ranking bonus is reputational, not financial. Validators who consistently approve credits that are fully repaid improve their ranking over time. A higher ranking increases a validator's priority positioning in proposals and unlocks access to greater deal flow — it does NOT generate a direct cash payment at settlement.</p>
+                <p>
+                  The ranking bonus is reputational, not financial. Validators
+                  who consistently approve credits that are fully repaid improve
+                  their ranking over time. A higher ranking increases a
+                  validator's priority positioning in proposals and unlocks
+                  access to greater deal flow — it does NOT generate a direct
+                  cash payment at settlement.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -418,40 +645,65 @@
             <span class="category-chevron">▼</span>
           </label>
           <div class="category-body">
-
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q2-1" />
               <label class="faq-question" for="q2-1">
-                <span class="faq-question-text">How does KYC and identity verification work for validators?</span>
+                <span class="faq-question-text"
+                  >How does KYC and identity verification work for
+                  validators?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>Validators undergo a full onboarding process including KYC, AML, and PEP screening before being granted access to credit proposals. Their credentials and professional competencies are verified against recognized regulatory entities or information bureaus. This ensures that only qualified, auditable participants can act in the protocol.</p>
+                <p>
+                  Validators undergo a full onboarding process including KYC,
+                  AML, and PEP screening before being granted access to credit
+                  proposals. Their credentials and professional competencies are
+                  verified against recognized regulatory entities or information
+                  bureaus. This ensures that only qualified, auditable
+                  participants can act in the protocol.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q2-2" />
               <label class="faq-question" for="q2-2">
-                <span class="faq-question-text">Are KYC credentials permanent or do they need renewal?</span>
+                <span class="faq-question-text"
+                  >Are KYC credentials permanent or do they need renewal?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>Borrower credentials are stored durably so that returning borrowers do not need to repeat the full onboarding process for subsequent loan applications. Validators are subject to ongoing compliance monitoring as part of their participation in the protocol.</p>
+                <p>
+                  Borrower credentials are stored durably so that returning
+                  borrowers do not need to repeat the full onboarding process
+                  for subsequent loan applications. Validators are subject to
+                  ongoing compliance monitoring as part of their participation
+                  in the protocol.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q2-3" />
               <label class="faq-question" for="q2-3">
-                <span class="faq-question-text">How does DPCS address the FATF Travel Rule?</span>
+                <span class="faq-question-text"
+                  >How does DPCS address the FATF Travel Rule?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>The protocol is designed to be Travel Rule compatible. Screened and credentialed participants, combined with on-chain audit trails and off-chain encrypted data, allow the protocol to satisfy originator and beneficiary information requirements without exposing PII on-chain. DPCS is aligned with VASP Privacy-Preserving frameworks.</p>
+                <p>
+                  The protocol is designed to be Travel Rule compatible.
+                  Screened and credentialed participants, combined with on-chain
+                  audit trails and off-chain encrypted data, allow the protocol
+                  to satisfy originator and beneficiary information requirements
+                  without exposing PII on-chain. DPCS is aligned with VASP
+                  Privacy-Preserving frameworks.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -467,18 +719,24 @@
             <span class="category-chevron">▼</span>
           </label>
           <div class="category-body">
-
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q3-1" />
               <label class="faq-question" for="q3-1">
-                <span class="faq-question-text">Has the protocol been audited?</span>
+                <span class="faq-question-text"
+                  >Has the protocol been audited?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>Smart contract audits are a core part of the DPCS security framework. The protocol targets 3 or more independent security audits, formal verification of lending logic, and a bug bounty program on ImmuneFi. Audit timelines are aligned with the testnet and mainnet launch roadmap.</p>
+                <p>
+                  Smart contract audits are a core part of the DPCS security
+                  framework. The protocol targets 3 or more independent security
+                  audits, formal verification of lending logic, and a bug bounty
+                  program on ImmuneFi. Audit timelines are aligned with the
+                  testnet and mainnet launch roadmap.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -494,44 +752,67 @@
             <span class="category-chevron">▼</span>
           </label>
           <div class="category-body">
-
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q4-1" />
               <label class="faq-question" for="q4-1">
-                <span class="faq-question-text">Which blockchain will DPCS deploy on?</span>
+                <span class="faq-question-text"
+                  >Which blockchain will DPCS deploy on?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>DPCS is evaluating deployment on leading EVM-compatible networks with strong institutional support and low transaction costs. The final chain selection will be informed by ecosystem partnerships and infrastructure readiness.</p>
+                <p>
+                  DPCS is evaluating deployment on leading EVM-compatible
+                  networks with strong institutional support and low transaction
+                  costs. The final chain selection will be informed by ecosystem
+                  partnerships and infrastructure readiness.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q4-2" />
               <label class="faq-question" for="q4-2">
-                <span class="faq-question-text">What types of borrowers is DPCS targeting?</span>
+                <span class="faq-question-text"
+                  >What types of borrowers is DPCS targeting?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>DPCS is designed to serve companies seeking capital in a more efficient and less bureaucratic way than traditional debt markets — comparable to tokenized debt issuance but at lower cost and with greater accessibility for both issuers and investors. Individual borrowers and SMEs may also be served as the protocol matures.</p>
+                <p>
+                  DPCS is designed to serve companies seeking capital in a more
+                  efficient and less bureaucratic way than traditional debt
+                  markets — comparable to tokenized debt issuance but at lower
+                  cost and with greater accessibility for both issuers and
+                  investors. Individual borrowers and SMEs may also be served as
+                  the protocol matures.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
               <input type="checkbox" class="faq-q-toggle" id="q4-3" />
               <label class="faq-question" for="q4-3">
-                <span class="faq-question-text">How does DPCS generate revenue?</span>
+                <span class="faq-question-text"
+                  >How does DPCS generate revenue?</span
+                >
                 <span class="faq-icon">+</span>
               </label>
               <div class="faq-answer">
-                <p>The protocol earns through two mechanisms: an origination fee charged on each loan, collected proportionally over the installment payment flow; and a yield generated on validator security deposits staked within the protocol. This creates a clean, sustainable revenue model without dependence on interest rate spread.</p>
+                <p>
+                  The protocol earns through two mechanisms: an origination fee
+                  charged on each loan, collected proportionally over the
+                  installment payment flow; and a yield generated on validator
+                  security deposits staked within the protocol. This creates a
+                  clean, sustainable revenue model without dependence on
+                  interest rate spread.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
-
-      </div><!-- /.faq-categories -->
+      </div>
+      <!-- /.faq-categories -->
     </main>
 
     <!-- FOOTER -->
@@ -539,16 +820,28 @@
       <div class="footer-inner">
         <div class="footer-links">
           <a href="https://web3thunder.finance">web3thunder.finance</a>
-          <a href="mailto:hello@web3thunder.finance">hello@web3thunder.finance</a>
-          <a href="https://x.com/web3thunderfin" target="_blank" rel="noopener">@web3thunderfin</a>
-          <a href="https://github.com/web3thunderfinance/qandawebsite" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:hello@web3thunder.finance"
+            >hello@web3thunder.finance</a
+          >
+          <a href="https://x.com/web3thunderfin" target="_blank" rel="noopener"
+            >@web3thunderfin</a
+          >
+          <a
+            href="https://github.com/web3thunderfinance/qandawebsite"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
         </div>
-        <p>&copy; <span id="year"></span> DPCS — Thunder Finance · Built for the Web3 community.</p>
+        <p>
+          &copy; <span id="year"></span> DPCS — Thunder Finance · Built for the
+          Web3 community.
+        </p>
       </div>
     </footer>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
